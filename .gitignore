@@ -1,0 +1,29 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Environment
+appsettings.*.json
+!.appsettings.Development.json
+!.appsettings.Production.json
+
+# Node (si hay frontend)
+node_modules/
+package-lock.json
