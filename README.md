@@ -2,6 +2,9 @@
 
 Sistema de gestión de inventario de libros personal con backend ASP.NET Core y frontend React.
 
+<img width="1920" height="1440" alt="230shots_so" src="https://github.com/user-attachments/assets/940438a9-1dcc-4e7e-9742-a515d22986a0" />
+
+
 ## Tecnologías
 
 ### Backend
