@@ -43,10 +43,11 @@ namespace Libros.Controllers
             return CreatedAtAction(nameof(Get), new { id = 0 }, createDto);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateLibroDTO updateDto)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateLibroDTO updateDto)
         {
-            var existeLibro = await service.Get(updateDto.Id);
+            updateDto.Id = id;
+            var existeLibro = await service.Get(id);
             if (existeLibro == null)
             {
                 return NotFound();

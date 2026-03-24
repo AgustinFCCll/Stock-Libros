@@ -32,18 +32,8 @@ builder.Services.AddCors(options =>
 });
 
 
-// Service (AppDbContext) - Dual database support
 builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    if (builder.Environment.IsProduction())
-    {
-        options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-    }
-    else
-    {
-        options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
-    }
-});
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 // Swagger
