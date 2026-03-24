@@ -21,7 +21,23 @@ Sistema de gestión de inventario de libros personal con backend ASP.NET Core y 
 - .NET 10.0 SDK
 - Node.js 18+
 
-## Instalación
+## Instalación y Ejecución Local
+
+### Opción rápida (Recomendada)
+
+1. Clonar el repositorio
+2. Ejecutar el archivo `Iniciar.bat`:
+   ```
+   Doble clic en Iniciar.bat
+   ```
+   
+   Esto automáticamente:
+   - Verifica que .NET y Node.js estén instalados
+   - Cierra procesos anteriores en los puertos
+   - Inicia el backend en `http://localhost:5052`
+   - Inicia el frontend en `http://localhost:5173`
+
+### Opción manual
 
 1. Clonar el repositorio
 2. Instalar dependencias del frontend:
@@ -30,15 +46,13 @@ Sistema de gestión de inventario de libros personal con backend ASP.NET Core y 
    npm install
    ```
 
-## Ejecución
-
-### Backend
+#### Backend
 ```bash
 dotnet run
 ```
-El API estará disponible en `http://localhost:5000`
+El API estará disponible en `http://localhost:5052`
 
-### Frontend
+#### Frontend
 ```bash
 cd frontend
 npm run dev
